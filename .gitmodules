@@ -1,0 +1,3 @@
+[submodule "pack/paqs/opt/paq-nvim"]
+	path = pack/paqs/opt/paq-nvim
+	url = https://github.com/savq/paq-nvim.git
