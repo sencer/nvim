@@ -1,6 +1,7 @@
 local paq = require'paq-nvim'.paq
 
-paq {'romainl/Apprentice'}
+paq {'rktjmp/lush.nvim'}
+paq {'npxbr/gruvbox.nvim'}
 
 paq {'tpope/vim-commentary'}
 paq {'tpope/vim-endwise'}
