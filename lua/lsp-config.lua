@@ -4,10 +4,14 @@ local util = require'lspconfig/util'
 
 local on_attach = function(client, bufnr)
 
-  local function xor(a, b) return (a or b) and not (a and b) end
-  if xor(not(os.getenv('CITC_ROOT') == ''), (client.name == 'cider')) then
-    vim.lsp.stop_client(client.id)
-    return
+  if os.getenv('CITC_ROOT') then
+    if client.name == 'clangd' then
+      vim.lsp.stop_client(client.id)
+    end
+  else
+    if client.name == 'cider' then
+      vim.lsp.stop_client(client.id)
+    end
   end
 
   mappings = {
