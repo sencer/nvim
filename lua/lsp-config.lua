@@ -54,7 +54,7 @@ if not lspconfig.cider then
     default_config = {
       cmd = {
         "ssh",
-        "sselcuk24.nyc.corp.google.com",
+        os.getenv('PROD_PROXY'),
         "/google/bin/releases/editor-devtools/ciderlsp",
       },
       filetypes = {"cpp", "python", "bzl", "proto"},
