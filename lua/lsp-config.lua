@@ -53,7 +53,7 @@ if not lspconfig.cider then
         "sselcuk24.nyc.corp.google.com",
         "/google/bin/releases/editor-devtools/ciderlsp",
       },
-      filetypes = {"cpp", "python", "bzl"},
+      filetypes = {"cpp", "python", "bzl", "proto"},
       root_dir = function(fname)
         return vim.api.nvim_eval("$CITC_ROOT")
       end,
