@@ -24,7 +24,7 @@ function! LspStatus() abort
   let l:server_status = luaeval('vim.lsp.buf.server_ready(1)')
 
   if l:server_status == 'false'
-    return 'LSP server not ready'
+    return 'LSP ⌛'
   endif
 
   let s:status_strings = []
