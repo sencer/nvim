@@ -11,7 +11,8 @@ paq {'tpope/vim-rsi'}
 paq {'tpope/vim-surround'}
 paq {'tpope/vim-unimpaired'}
 paq {'tpope/vim-fugitive'}
-paq {'ludovicchabant/vim-lawrencium'} paq {'tommcdo/vim-exchange'}
+paq {'ludovicchabant/vim-lawrencium'}
+paq {'tommcdo/vim-exchange'}
 paq {'romainl/vim-cool'}
 
 paq {'tpope/vim-dispatch'}
